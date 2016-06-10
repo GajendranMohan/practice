@@ -1,0 +1,39 @@
+<!DOCTYPE htmll>
+<html>
+<head>
+<title>
+Life</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  </head>
+<body style="background-color:F2F1EF">
+<div style="font-size:30px;font-family:Cursive">
+<center><h1 style="color:52B3D9"><Strong>
+Express your thoughts</strong></h1>
+</center>
+</div>
+<script>
+		$(document).ready(function() {
+			$("#update-btn").click(function() {
+				var userText=	$("#textarea").val();
+				$("#textarea").val("");
+					var prevMsg= $("#display").html();
+						
+							$("#display").html(userText + "<br>" + prevMsg);
+			});
+		});
+	</script>
+	
+<div style="margin-top:75px">
+<textarea id="textarea" style="width:650px;margin-left:350px;resize:none" placeholder="Enter The Message Here..." ></textarea>
+<button id="update-btn" style="position:absolute;font-size:26px">Update</button></span>
+</div>
+<div id="display"style="margin-left:350px;margin-top:50px; width: 750px; height: 400px; padding: 10px; border: 5px dashed gray;overflow:scroll">
+
+</div>
+</body>
+</html>
